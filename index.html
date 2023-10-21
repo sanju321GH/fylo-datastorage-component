@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <script src="/index.js">
+    </script>
+    <div id="container">
+      <div id="logo">
+        <img src="/images/logo.svg" alt="" id="logo">
+      </div>
+      <div id="icons">
+        <ul>
+          <li><a href="#"id = document><img src="/images/icon-document.svg" alt=""></a></li>
+          <li><a href="#"id = folder><img src="/images/icon-folder.svg" alt=""></a></li>
+          <li><a href="#" id="upload"><img src="/images/icon-upload.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="range-slider-container">
+      <div id="matter">
+        <p style="display: inline-block;"> you have used</p>
+        <p id="range-displayer" style="display: inline-block;">0</p>
+        <p style="display: inline-block;">out of 1000GB</p>
+      </div>
+      <div id="range-container">
+        <input type="range" min="0" max="200"value= "0" onmousemove=displayer(this.value) id="range" >
+        <div id="progre">
+
+        </div>
+        <p style="display: inline-block; position: relative;top: -10px; font-weight: 700; font-size: 11px;">0 GB</p><p style="display: inline-block; position: relative;left: 435px; top: -10px;font-weight: 700; font-size: 11px;">1000 GB</p>
+      </div>
+    </div>
+    <div id="leftGB-displayer">
+       <div id="shape">
+       </div>
+       <h1 style="display: inline-block;" id="GB">0</h1>
+       <p style="display: inline-block;" id="left">GB left</p>
+    </div>
+    <img src="/images/bg-desktop.png" alt="" id="bgimg">
+    <div id="progress"></div>
+</body>
+</html>
